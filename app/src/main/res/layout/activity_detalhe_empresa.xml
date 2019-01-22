@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalheEmpresaActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/detalhe_empresa" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginBottom="19dp"
+        android:text="Empresa"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nisl urna. Pellentesque turpis felis, vestibulum porta lorem sit amet, cursus elementum magna. Duis sed congue metus. Aliquam lacinia convallis nibh, a volutpat orci pulvinar vitae. Fusce rhoncus iaculis accumsan. Quisque in lobortis eros, id sagittis tortor. Donec interdum nec purus nec elementum. Donec ex turpis, molestie a dolor ut, porttitor fermentum mi. Morbi mattis mauris feugiat, dignissim mi id, gravida justo. Ut venenatis turpis ante, et lobortis enim imperdiet eget. Vivamus at ultrices dui. Nullam ut sapien et felis hendrerit laoreet. Donec sem metus, fringilla non ornare a, imperdiet non felis. Nulla luctus rhoncus sodales.  Ut nec condimentum enim. Ut et porttitor lectus, sit amet malesuada nulla. Donec consectetur non erat sed consectetur. Sed pulvinar vel sem vel sagittis. Sed placerat metus tristique turpis mattis, ut euismod lorem tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut non vulputate risus, eget vestibulum dui.  Phasellus nisl arcu, pulvinar quis dolor eget, dignissim finibus libero. Fusce blandit mi vel velit aliquet condimentum. Donec consectetur purus sapien, vitae facilisis tortor efficitur quis. Donec facilisis magna ut malesuada auctor. Ut facilisis purus eget velit mollis eleifend. Nullam consectetur, eros ut gravida blandit, eros diam ullamcorper libero, vel pretium justo augue vel ante. Quisque at facilisis est, nec posuere velit. Vestibulum congue mi eu sem rhoncus, ut sagittis purus dapibus. Sed consequat condimentum sapien, id posuere lectus tempus in. Pellentesque magna enim, tincidunt a ultrices et, laoreet ut sapien."
+                tools:layout_editor_absoluteX="79dp"
+                tools:layout_editor_absoluteY="216dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
